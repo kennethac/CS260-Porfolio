@@ -6,6 +6,7 @@
     --Pacifico: 'Pacifico', cursive;
     --primary-color: #43229e;
     --light-color: #c8b5ff;
+    --accent-color: #ffe4b5;
 }
 
 body {
@@ -55,6 +56,7 @@ footer {
     margin: 0;
     padding: 10px;
     font-family: var(--Pacifico);
+    border-top: 10px solid var(--accent-color);
 }
 
 nav { 
