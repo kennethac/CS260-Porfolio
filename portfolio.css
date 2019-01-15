@@ -1,0 +1,125 @@
+:root {
+    --ZCOOL: 'ZCOOL KuaiLe', cursive;
+    --IndieFlower: 'IndieFlower', cursive;
+    --Anton: 'Anton', sans-serif;
+    --Lobster: 'Lobster', cursive;
+    --Pacifico: 'Pacifico', cursive;
+    --primary-color: #43229e;
+    --light-color: #c8b5ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
+body > * {
+    flex: 0 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--ZCOOL);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--Lobster);
+}
+
+h3 {
+    font-family: var(--ZCOOL);
+}
+
+p {
+    font-family: var(--IndieFlower);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    font-family: var(--Pacifico);
+}
+
+nav { 
+    width: 100%;
+    min-height: 3rem;
+    font-family: var(--Anton);
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav > ul > li {
+    margin: 0;
+    min-width: 200px;
+    width: 24%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+    flex: 1 0 auto;
+  }
+  
+
+  nav > ul > li.active, nav > ul > li:hover {
+      background-color: var(--primary-color);
+  }
+
+  nav > ul > li.active a, nav > ul > li:hover a {
+      color: white;
+}
+
+  nav > ul > li a {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .clearer {
+      clear: both;
+  }
+
+  section {
+      display: flex;
+      height: 1px;
+      flex: 1 0 auto;
+  }
+
+  aside { 
+      flex: 1;
+      background-color: var(--light-color);
+      height: 100%;
+  }
+
+  article {
+      flex: 4;
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
